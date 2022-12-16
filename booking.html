@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="icon" href="../img/travel.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="../img/seawaves.mp4" type="video/mp4">
+    </video>
+
+    <hr><h1 class="title"><i class="fa fa-ticket"></i> Booking Paket</h1>
+
+    <div class="package" id="package">
+        <a href="package.html"><button type="button" class="btn-package"><i class="fa fa-arrow-left"></i> Kembali</button></a>
+        <div class="card booking" id="card"></div>
+    </div>
+
+    <div class="identity">
+        <form>
+            <hr><h1 class="title"><i class="fa fa-id-card"></i> Identitas Diri</h1>
+            <table>
+                <tr>
+                    <td><label for="name">Nama</label></td>
+                    <td><input type="text" id="name" placeholder="Masukkan nama anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" placeholder="Masukkan email anda"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday-date">Tanggal Lahir</label></td>
+                    <td><input type="text" id="birthday-date" placeholder="Masukkan tanggal lahir anda"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Nomor Telepon</label></td>
+                    <td><input type="text" id="phone" placeholder="Masukkan nomor telepon anda"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="additional">Tambahan</label></td>
+                    <td><textarea cols="60" rows="5" placeholder="Masukkan tambahan anda"></textarea></td>
+                </tr>
+            </table>
+
+            <hr><h1 class="title"><i class="fa fa-receipt"></i> Bukti Pembayaran</h1>
+
+            <label class="bank-account">*Mohon mentransfer harga yang tertera ke BCA Virtual Account 70123456789 dan mengupload buktinya di kolom bawah ini.</label>
+            <input type="file" class="file">
+
+            <div class="terms">
+                <input type="checkbox" class="checkbox">
+                <label class="terms">Dengan menceklis ini maka anda setuju dengan <a href="">S&K</a> yang berlaku pada Touravelling.</label>
+            </div>
+            
+            <button type="button" id="btn-finish"><i class="fa fa-plus"></i> Pesan</button>
+        </form>
+    </div>
+
+    <footer>Copyright &copy; 2021 Touravelling. All rights reserved.</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
